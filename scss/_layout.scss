@@ -62,6 +62,24 @@
 
         }
     }
+    #header.fixed {
+        .center {
+            // js에서 로고 변경
+            .gnb {
+                > li {
+                    &::after {color: #040c2c;}
+                    > a {color: #040c2c;}
+                }
+            }
+            .login {
+                background-color: #040c2c;
+                color: #fff;
+                &::after {
+                    background-color: #3a3a3a;
+                }
+            }
+        }
+    }
     // 중간영역
     #container {
         // 첫번째 구역
@@ -155,6 +173,34 @@
                         }
                     }
                     
+                }
+            }
+        }
+        // 세번째 구역
+        .doing {
+            background-color: #fafafa;
+            display: flex; justify-content: center;
+            .center {
+                width: 58%; //1110px
+                .textBox {
+                    text-align: center; margin-top: 120px;
+                    .title {font-size: 25px; color: #040c2c; margin-bottom: 26px;}
+                    .text {font-size: 17px; color: #6e6e6e}
+                    .bar {
+                        width: 80px; height: 2px; background-color: #bcbcbc;
+                        margin: 27px auto 70px;
+                    }
+                }
+                .boxWrap {
+                    width: 100%; background-color: skyblue;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .box {
+                        width: 31.333%; margin: 2% 0;
+                        background-color: pink;
+                        text-align: center;
+                    }
                 }
             }
         }
