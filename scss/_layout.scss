@@ -58,4 +58,42 @@
 
         }
     }
+    // 중간영역
+    #container {
+        // 첫번째 구역
+        .intro {
+            width: 100%; height: 100vh;
+            background-image: url(../img/profile.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            .front-bg {
+                width: 100%; height: 100%;
+                background-color: rgba(0,0,0,0.5);
+                display: flex; justify-content: center;
+                align-items: center;
+                .centerBox {
+                    text-align: center; color: #fff;
+                    .hello {font-size: 15px; margin-bottom: 68px;}
+                    .myName {font-size: 42px; margin-bottom: 38px;}
+                    .job {font-size: 23px; margin-bottom: 38px;}
+                    .sns {
+                        display: flex; justify-content: center;
+                        li {
+                            margin: 0 10px;
+                            width: 35px; line-height: 35px;
+                            border-radius: 50%;
+                            background-color: rgba(0,0,0,0.2);
+                            transition: all 0.5s;
+                            a {color: #fff;}
+                            &:hover {
+                                background-color: #fff;
+                                a {color: #494949;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
