@@ -23,7 +23,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 22px;
+  padding: 22px 0;
   transition: all 0.5s;
   position: fixed;
   left: 0;
@@ -493,4 +493,102 @@ body {
 #wrap #container .trust .imgWrap img {
   width: 7%;
   margin: 0 30px;
+}
+#wrap #container .blog {
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  padding-bottom: 120px;
+}
+#wrap #container .blog .center {
+  width: 58%;
+}
+#wrap #container .blog .center .textBox {
+  text-align: center;
+  margin-top: 120px;
+}
+#wrap #container .blog .center .textBox .title {
+  font-size: 25px;
+  color: #040c2c;
+  margin-bottom: 26px;
+}
+#wrap #container .blog .center .textBox .text {
+  font-size: 17px;
+  color: #6e6e6e;
+}
+#wrap #container .blog .center .textBox .bar {
+  width: 80px;
+  height: 2px;
+  background-color: #bcbcbc;
+  margin: 27px auto 70px;
+}
+#wrap #container .blog .center .blogWrap {
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #container .blog .center .blogWrap .blogBox {
+  width: 31.333%;
+  border: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+#wrap #container .blog .center .blogWrap .blogBox .blogImg {
+  position: relative;
+}
+#wrap #container .blog .center .blogWrap .blogBox .blogImg img {
+  width: 100%;
+}
+#wrap #container .blog .center .blogWrap .blogBox .blogImg .dateBox {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  width: 55px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #494949;
+  transition: all 0.5s;
+}
+#wrap #container .blog .center .blogWrap .blogBox .blogImg:hover .dateBox {
+  background-color: #040c2c;
+  color: #fff;
+}
+#wrap #container .blog .center .blogWrap .blogBox .botText {
+  padding: 30px 25px 35px;
+}
+#wrap #container .blog .center .blogWrap .blogBox .botText .iconName span {
+  color: #797979;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+#wrap #container .blog .center .blogWrap .blogBox .botText .iconName span:nth-child(1) {
+  position: relative;
+  top: 2px;
+}
+#wrap #container .blog .center .blogWrap .blogBox .botText .iconName .author {
+  font-size: 13px;
+  color: #494949;
+}
+#wrap #container .blog .center .blogWrap .blogBox .botText .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #494949;
+  margin-bottom: 32px;
+}
+#wrap #container .blog .center .blogWrap .blogBox .botText .blogText {
+  font-size: 12px;
+  line-height: 33px;
+  color: #797979;
+  margin-bottom: 35px;
+}
+#wrap #container .blog .center .blogWrap .blogBox .botText .more {
+  color: #797979;
+  font-weight: bold;
 }
