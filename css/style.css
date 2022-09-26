@@ -24,9 +24,11 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 22px;
+  transition: all 0.5s;
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 99;
 }
 #wrap #header .center {
   width: 73%;
@@ -92,6 +94,9 @@ body {
 #wrap #header .center .login:hover::after {
   width: 102%;
   opacity: 1;
+}
+#wrap #header.fixed {
+  background-color: #fff;
 }
 #wrap #header.fixed .center .gnb > li::after {
   color: #040c2c;
@@ -206,7 +211,7 @@ body {
 }
 #wrap #container .about_me .leftBox .linkBtn > a::after {
   display: block;
-  width: 100%;
+  width: 0;
   height: 50px;
   position: absolute;
   left: 50%;

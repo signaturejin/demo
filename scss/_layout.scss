@@ -3,8 +3,8 @@
     #header {
         width: 100%;
         display: flex; justify-content: center;
-        padding-top: 22px;
-        position: fixed; left: 0; top: 0;
+        padding-top: 22px; transition: all 0.5s;
+        position: fixed; left: 0; top: 0; z-index: 99;
         .center {
             width: 73%; //1410px
             display: flex; justify-content: space-between;
@@ -63,6 +63,7 @@
         }
     }
     #header.fixed {
+        background-color: #fff;
         .center {
             // js에서 로고 변경
             .gnb {
@@ -146,7 +147,7 @@
                         transition: all 0.5s;
                         position: relative;
                         &::after {
-                            display: block; width: 100%;
+                            display: block; width: 0;
                             height: 50px; position: absolute;
                             left: 50%; top: 0; transform: translateX(-50%);
                             background-color: #040c2c; border-radius: 3px;
