@@ -261,5 +261,23 @@
                 }
             }
         }
+        // 다섯번째 구역
+        .counting {
+            background-color: #fafafa; height: 340px;
+            display: flex; justify-content: center;
+            align-items: center;
+            .countWrap {
+                display: flex; justify-content: center;
+                .countBox {
+                    text-align: center; margin: 0 80px;
+                    .countIcon {
+                        margin-bottom: 25px;
+                        span {font-size: 40px; color: #797979;}
+                    }
+                    .countNumber {font-size: 25px; color: #040c2c; margin-bottom: 24px;}
+                    .text {font-size: 17px; color: #797979;}
+                }
+            }
+        }
     }
 }

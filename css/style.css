@@ -366,3 +366,34 @@ body {
 #wrap #container .portfolio .center .isoWrap img {
   width: 100%;
 }
+#wrap #container .counting {
+  background-color: #fafafa;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #container .counting .countWrap {
+  display: flex;
+  justify-content: center;
+}
+#wrap #container .counting .countWrap .countBox {
+  text-align: center;
+  margin: 0 80px;
+}
+#wrap #container .counting .countWrap .countBox .countIcon {
+  margin-bottom: 25px;
+}
+#wrap #container .counting .countWrap .countBox .countIcon span {
+  font-size: 40px;
+  color: #797979;
+}
+#wrap #container .counting .countWrap .countBox .countNumber {
+  font-size: 25px;
+  color: #040c2c;
+  margin-bottom: 24px;
+}
+#wrap #container .counting .countWrap .countBox .text {
+  font-size: 17px;
+  color: #797979;
+}
