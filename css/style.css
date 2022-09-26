@@ -241,6 +241,7 @@ body {
   background-color: #fafafa;
   display: flex;
   justify-content: center;
+  padding-bottom: 120px;
 }
 #wrap #container .doing .center {
   width: 58%;
@@ -266,7 +267,6 @@ body {
 }
 #wrap #container .doing .center .boxWrap {
   width: 100%;
-  background-color: skyblue;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -274,6 +274,31 @@ body {
 #wrap #container .doing .center .boxWrap .box {
   width: 31.333%;
   margin: 2% 0;
-  background-color: pink;
   text-align: center;
+  border: 1px solid #f3f1f1;
+  background-color: #fff;
+}
+#wrap #container .doing .center .boxWrap .box .boxIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #8a8a8a;
+  text-align: center;
+  margin: 40px auto 37px;
+}
+#wrap #container .doing .center .boxWrap .box .boxIcon span {
+  color: #8a8a8a;
+  font-size: 30px;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+#wrap #container .doing .center .boxWrap .box .boxTitle {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+#wrap #container .doing .center .boxWrap .box .boxText {
+  font-size: 13px;
+  line-height: 30px;
+  color: #797979;
+  margin-bottom: 50px;
 }
