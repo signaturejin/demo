@@ -279,5 +279,58 @@
                 }
             }
         }
+        // 여섯번째 구역
+        .slider {
+            width: 100%; height: 540px;
+            background-image: url(../img/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex; justify-content: center;
+            align-items: center;
+            position: relative;
+            .center {
+                width: 29%; overflow: hidden;
+                .view {
+                    width: 300%; display: flex;
+                    transition: all 0.5s;
+                    .sliderBox {
+                        text-align: center; color: #fff;
+                        img {
+                            width: 80px; height: 80px;
+                            border-radius: 50%;
+                            border: 1px solid #fff;
+                            margin-bottom: 25px;
+                        }
+                        .name {
+                            font-size: 15px; margin-bottom: 17px;
+                            font-weight: bold;
+                        }
+                        .text1 {
+                            font-size: 10px; color: #afb0b0;
+                            margin-bottom: 34px;
+                        }
+                        .text2 {
+                            font-size: 15px; line-height: 30px;
+                            margin-bottom: 55px;
+                        }
+                    }
+                }
+            }
+            .sliderBtn {
+                display: flex; justify-content: center;
+                position: absolute; left: 50%; bottom: 30px;
+                transform: translateX(-50%);
+                li {
+                    width: 10px; height: 10px;
+                    border-radius: 50%; margin: 0 5px;
+                    background-color: #9c9d9f;
+                    cursor: pointer;
+                }
+                li.on {
+                    width: 12px; height: 12px;
+                    background-color: #fff;
+                }
+            }
+        }
     }
 }
