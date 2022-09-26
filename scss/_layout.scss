@@ -221,5 +221,45 @@
                 }
             }
         }
+        // 네번째 구역
+        .portfolio {
+            display: flex; justify-content: center;
+            padding-bottom: 120px;
+            .center {
+                width: 58%; //1110px
+                .textBox {
+                    text-align: center; margin-top: 120px;
+                    .title {font-size: 25px; color: #040c2c; margin-bottom: 26px;}
+                    .text {font-size: 17px; color: #6e6e6e}
+                    .bar {
+                        width: 80px; height: 2px; background-color: #bcbcbc;
+                        margin: 27px auto 70px;
+                    }
+                }
+                .isoMenu {
+                    display: flex; justify-content: center;
+                    margin-bottom: 50px;
+                    li {
+                        a {
+                            display: block; width: 78px; line-height: 40px;
+                            border: 1px solid #ededed; text-align: center;
+                            font-size: 11px; color: #000; margin: 0 12px;
+                            box-sizing: border-box;
+                        }
+                    }
+                    li.click {
+                        a {background-color: #040c2c; color: #fff;}
+                    }
+                }
+                .isoWrap {
+                    display: flex; justify-content: space-between;
+                    flex-wrap: wrap;
+                    .small,.big { margin: 1%;}
+                    .small {width: 23%;}
+                    .big {width: 48%;}
+                    img {width: 100%;}
+                }
+            }
+        }
     }
 }

@@ -302,3 +302,67 @@ body {
   color: #797979;
   margin-bottom: 50px;
 }
+#wrap #container .portfolio {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+#wrap #container .portfolio .center {
+  width: 58%;
+}
+#wrap #container .portfolio .center .textBox {
+  text-align: center;
+  margin-top: 120px;
+}
+#wrap #container .portfolio .center .textBox .title {
+  font-size: 25px;
+  color: #040c2c;
+  margin-bottom: 26px;
+}
+#wrap #container .portfolio .center .textBox .text {
+  font-size: 17px;
+  color: #6e6e6e;
+}
+#wrap #container .portfolio .center .textBox .bar {
+  width: 80px;
+  height: 2px;
+  background-color: #bcbcbc;
+  margin: 27px auto 70px;
+}
+#wrap #container .portfolio .center .isoMenu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#wrap #container .portfolio .center .isoMenu li a {
+  display: block;
+  width: 78px;
+  line-height: 40px;
+  border: 1px solid #ededed;
+  text-align: center;
+  font-size: 11px;
+  color: #000;
+  margin: 0 12px;
+  box-sizing: border-box;
+}
+#wrap #container .portfolio .center .isoMenu li.click a {
+  background-color: #040c2c;
+  color: #fff;
+}
+#wrap #container .portfolio .center .isoWrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#wrap #container .portfolio .center .isoWrap .small, #wrap #container .portfolio .center .isoWrap .big {
+  margin: 1%;
+}
+#wrap #container .portfolio .center .isoWrap .small {
+  width: 23%;
+}
+#wrap #container .portfolio .center .isoWrap .big {
+  width: 48%;
+}
+#wrap #container .portfolio .center .isoWrap img {
+  width: 100%;
+}
