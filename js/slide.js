@@ -19,15 +19,25 @@ slBtn.forEach(function(item,index){
 });
 
 //자동 슬라이딩
-// setInterval(function(){
+let autoSlide = setInterval(function(){
 
-//     if(num >= slBtn.length){
-//         num = 0;
-//     }
-//     else {
-//         num++;
-//     }
+    if(num >= slBtn.length){
+        num = 0;
+    }
+    else {
+        num++;
+    }
 
-//     view.style.marginLeft = -100 * num + "%";
+    view.style.marginLeft = -100 * num + "%";
 
-// },100);
+},100);
+
+view.addEventListener("mouseenter",function(){
+    clearInterval(autoSlide);
+});
+
+view.addEventListener("mouseleave",function(){
+    setTimeout(function(){
+        autoSlide();
+    },100);
+});

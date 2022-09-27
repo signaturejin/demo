@@ -341,12 +341,12 @@
                     <div class="bar" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000"></div>
                 </div>
                 <div class="imgWrap">
-                    <img src="img/1.png" alt="">
-                    <img src="img/2.png" alt="">
-                    <img src="img/3.png" alt="">
-                    <img src="img/4.png" alt="">
-                    <img src="img/5.png" alt="">
-                    <img src="img/6.png" alt="">
+                    <img src="img/1.png" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    <img src="img/2.png" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                    <img src="img/3.png" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+                    <img src="img/4.png" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                    <img src="img/5.png" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1100">
+                    <img src="img/6.png" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300">
                 </div>
             </div>
             <!-- 여덟번째 영역 -->
@@ -466,16 +466,16 @@
                     <li data-aos="fade-right" data-aos-duration="700" data-aos-delay="400">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     </li>
-                    <li data-aos="fade-right" data-aos-duration="700" data-aos-delay="700">
+                    <li data-aos="fade-right" data-aos-duration="700" data-aos-delay="600">
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     </li>
-                    <li data-aos="fade-right" data-aos-duration="700" data-aos-delay="1000">
+                    <li data-aos="fade-right" data-aos-duration="700" data-aos-delay="800">
                         <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
                     </li>
-                    <li data-aos="fade-right" data-aos-duration="700" data-aos-delay="1300">
+                    <li data-aos="fade-right" data-aos-duration="700" data-aos-delay="1000">
                         <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
                     </li>
-                    <li data-aos="fade-right" data-aos-duration="700" data-aos-delay="1300">
+                    <li data-aos="fade-right" data-aos-duration="700" data-aos-delay="1200">
                         <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
                     </li>
                 </ul>
@@ -504,11 +504,33 @@
     <script>
         let container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
         let options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+            center: new kakao.maps.LatLng(37.6598, 126.7709), //지도의 중심좌표.
             level: 3 //지도의 레벨(확대, 축소 정도)
         };
 
         let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+        // 마커가 표시될 위치입니다 
+        let markerPosition  = new kakao.maps.LatLng(37.6598, 126.7709); 
+
+        // 마커를 생성합니다
+        let marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+
+        // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+        let mapTypeControl = new kakao.maps.MapTypeControl();
+
+        // 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+        // kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+        map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+        // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+        let zoomControl = new kakao.maps.ZoomControl();
+        map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
     </script>
 </body>
 </html>
