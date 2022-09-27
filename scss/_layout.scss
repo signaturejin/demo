@@ -29,6 +29,9 @@
                         
                     }
                 }
+                > li.on {
+                    &::after {width: 60%;}
+                }
             }
             .login { 
                 display: block; width: 115px; line-height: 40px;
@@ -68,7 +71,7 @@
             // js에서 로고 변경
             .gnb {
                 > li {
-                    &::after {color: #040c2c;}
+                    &::after {background-color: #040c2c;}
                     > a {color: #040c2c;}
                 }
             }

@@ -68,6 +68,9 @@ body {
   margin: 0 17px;
   font-size: 13px;
 }
+#wrap #header .center .gnb > li.on::after {
+  width: 60%;
+}
 #wrap #header .center .login {
   display: block;
   width: 115px;
@@ -104,7 +107,7 @@ body {
   background-color: #fff;
 }
 #wrap #header.fixed .center .gnb > li::after {
-  color: #040c2c;
+  background-color: #040c2c;
 }
 #wrap #header.fixed .center .gnb > li > a {
   color: #040c2c;
