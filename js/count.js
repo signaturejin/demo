@@ -29,21 +29,30 @@ let countList = [
     }
 ];
 
+//한번만 동작하게 하기 위한 변수
+let stop = true;
+
 //스크롤을 내려서 다섯번째구역 시작위치값에 도달하였을 때 카운트 발생
 window.addEventListener("scroll",function(){
     let scTop = window.scrollY;
     let contStart = document.querySelector(".counting").offsetTop;
 
+    //헤더의 높이값을 빼서 계산
     if(scTop >= contStart - 104){
         //반복문 안에서 함수 호출
-        countList.forEach(function(item,index){
-            autoCount(item.incNum,item.complete,item.tag,item.speed);
-        });
+        if(stop == true){
+            countList.forEach(function(item,index){
+                autoCount(item.incNum,item.complete,item.tag,item.speed);
+            });
+        }
     }
 });
 
 //함수 생성
 function autoCount(incNum,complete,tag,speed){
+    //stop변수를 false로 만들어서 더 이상 실행 못하게 막음
+    stop = false;
+
     //변수 생성
     let num = 0;
 
