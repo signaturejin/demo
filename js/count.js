@@ -34,7 +34,7 @@ window.addEventListener("scroll",function(){
     let scTop = window.scrollY;
     let contStart = document.querySelector(".counting").offsetTop;
 
-    if(scTop >= contStart){
+    if(scTop >= contStart - 104){
         //반복문 안에서 함수 호출
         countList.forEach(function(item,index){
             autoCount(item.incNum,item.complete,item.tag,item.speed);
