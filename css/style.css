@@ -15,6 +15,11 @@ img, video {
   vertical-align: middle;
 }
 
+input, select, textarea {
+  outline: 0;
+  resize: none;
+}
+
 body {
   line-height: 1;
 }
@@ -596,4 +601,123 @@ body {
   width: 100%;
   height: 500px;
   background-color: #797979;
+}
+#wrap #container .contact {
+  display: flex;
+  justify-content: center;
+  height: 685px;
+  align-items: center;
+}
+#wrap #container .contact .center {
+  width: 58%;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #container .contact .center > div h2 {
+  font-size: 25px;
+  color: #040c2c;
+  margin-bottom: 48px;
+}
+#wrap #container .contact .center .info {
+  width: 43%;
+}
+#wrap #container .contact .center .info p {
+  position: relative;
+  padding-left: 25px;
+  font-size: 12px;
+  line-height: 29px;
+  color: #797979;
+}
+#wrap #container .contact .center .info p span {
+  position: absolute;
+  left: -1px;
+  top: 4px;
+  font-size: 21px;
+}
+#wrap #container .contact .center .form {
+  width: 57%;
+}
+#wrap #container .contact .center .form form input, #wrap #container .contact .center .form form textarea {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 30px;
+  margin: 0 10px 30px 0;
+  border: 1px solid #ededed;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+#wrap #container .contact .center .form form textarea {
+  padding-top: 20px;
+  width: 617px;
+  height: 140px;
+}
+#wrap #container .contact .center .form form button {
+  width: 197px;
+  line-height: 52px;
+  border: none;
+  background-color: #494949;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+}
+#wrap #container .contact .center .form form button::before {
+  content: "Send Message";
+  display: block;
+  width: 0;
+  height: 52px;
+  background-color: #040c2c;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+#wrap #container .contact .center .form form button:hover::before {
+  width: 200px;
+  opacity: 1;
+}
+#wrap #footer {
+  display: flex;
+  justify-content: center;
+  height: 310px;
+  background-color: #040c2c;
+  align-items: center;
+}
+#wrap #footer .center img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#wrap #footer .f-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#wrap #footer .f-menu li {
+  margin: 0 6px;
+  border: 1px solid #fff;
+  width: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+}
+#wrap #footer .f-menu li a {
+  color: #fff;
+  margin-left: 32%;
+}
+#wrap #footer .f-text {
+  text-align: center;
+}
+#wrap #footer .f-text .made {
+  font-size: 11px;
+  margin-bottom: 17px;
+  font-style: italic;
+  color: #999487;
+}
+#wrap #footer .f-text .made span {
+  color: #fff;
+}
+#wrap #footer .f-text .copy {
+  color: #fff;
+  font-size: 13px;
 }
