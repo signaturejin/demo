@@ -115,17 +115,16 @@ body {
   top: 103px;
   width: 100%;
   height: 0;
-  background-color: skyblue;
   display: flex;
   justify-content: center;
   transition: all 0.5s;
+  background-color: #fff;
 }
 #wrap #header .mobileBoard .center {
   display: none;
   width: 78%;
   padding: 30px 15px;
   box-sizing: border-box;
-  background-color: gold;
 }
 #wrap #header .mobileBoard .center .mobileMenu li {
   position: relative;
@@ -919,5 +918,91 @@ body {
   }
   #wrap #header .mobileBoard.show .center {
     display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  #wrap #header .center {
+    width: 100%;
+    padding: 0 15px;
+  }
+  #wrap #header .center .mobileBtn {
+    right: 15px;
+  }
+  #wrap #container .about_me {
+    display: block;
+  }
+  #wrap #container .about_me > div {
+    width: 100%;
+  }
+  #wrap #container .about_me .leftBox {
+    margin: 90px 0 50px 15px;
+  }
+  #wrap #container .doing .center {
+    width: 100%;
+  }
+  #wrap #container .doing .center .boxWrap {
+    justify-content: space-around;
+  }
+  #wrap #container .doing .center .boxWrap .box {
+    width: 47%;
+  }
+  #wrap #container .portfolio .center {
+    width: 100%;
+  }
+  #wrap #container .portfolio .center .isoWrap .small, #wrap #container .portfolio .center .isoWrap .big {
+    width: 47%;
+  }
+  #wrap #container .portfolio .center .isoWrap .portBox .wrap .box p {
+    font-size: 30px;
+    margin-bottom: 25px;
+    line-height: 35px;
+  }
+  #wrap #container .portfolio .center .isoWrap .portBox .wrap .box .icon i {
+    font-size: 30px;
+    margin: 0 3px;
+  }
+  #wrap #container .counting {
+    height: 545px;
+  }
+  #wrap #container .counting .countWrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #wrap #container .counting .countWrap .countBox {
+    width: 38%;
+    margin: 5% 0;
+  }
+  #wrap #container .slider {
+    height: 570px;
+  }
+  #wrap #container .slider .center {
+    width: 68%;
+  }
+  #wrap #container .slider .sliderBtn {
+    bottom: 100px;
+  }
+  #wrap #container .blog .center {
+    width: 100%;
+  }
+  #wrap #container .blog .center .blogWrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #wrap #container .blog .center .blogWrap .blogBox {
+    width: 96%;
+    margin-bottom: 50px;
+  }
+  #wrap #container .contact .center {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #wrap #container .contact .center .info {
+    width: 96%;
+    margin-top: 250px;
+    margin-bottom: 65px;
+  }
+  #wrap #container .contact .center .form {
+    width: 96%;
   }
 }

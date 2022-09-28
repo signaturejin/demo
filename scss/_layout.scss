@@ -68,17 +68,15 @@
         }
         .mobileBoard {
             position: absolute; left: 0; top: 103px;
-            width: 100%;
-            height: 0;
-            background-color: skyblue;
+            width: 100%; height: 0;
             display: flex; justify-content: center;
             transition: all 0.5s;
+            background-color: #fff;
             .center {
                 display: none;
 
                 width: 78%; padding: 30px 15px;
                 box-sizing: border-box;
-                background-color: gold;
                 .mobileMenu {
                     li {
                         position: relative;
@@ -686,6 +684,117 @@
             .mobileBoard.show {
                 height: 347px;
                 .center {display: block;}
+            }
+        }
+    }
+}
+
+//768px 이하 반응형
+@media screen and (max-width: 768px){
+    #wrap {
+        //상단영역
+        #header {
+            // width: 80%;
+            .center {
+                width: 100%;
+                padding: 0 15px;
+                .mobileBtn {
+                    right: 15px;
+                }
+            }
+        }
+        //중간영역
+        #container {
+            //두번째 영역
+            .about_me {
+                display: block;
+                > div {width: 100%;}
+                .leftBox {margin: 90px 0 50px 15px;}
+                // .rightBox {
+                //     background-color: red;
+                //     .about_img {width: 100%;}
+                // }
+            }
+            //세번째 영역
+            .doing {
+                .center {
+                    width: 100%;
+                    .boxWrap {
+                        justify-content: space-around;
+                        .box {
+                            width: 47%;
+                        }
+                    }
+                }
+            }
+            //네번째 영역
+            .portfolio {
+                .center {
+                    width: 100%;
+                    .isoWrap {
+                        .small,.big {width: 47%;}
+                        .portBox {
+                            .wrap {
+                                .box {
+                                    p {
+                                        font-size: 30px; margin-bottom: 25px;
+                                        line-height: 35px;
+                                    }
+                                    .icon {
+                                        i {font-size: 30px; margin: 0 3px;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //다섯번째 영역
+            .counting {
+                height: 545px;
+                .countWrap {
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .countBox {
+                        width: 38%;
+                        margin: 5% 0;
+                    }
+                }
+            }
+            //여섯번째 영역
+            .slider {
+                height: 570px;
+                .center {
+                    width: 68%;
+                }
+                .sliderBtn {
+                    bottom: 100px;
+                }
+            }
+            //일곱번째 영역
+            .trust {
+                // 자동 슬라이드로 바꾸기
+            }
+            //여덟번째 영역
+            .blog {
+                .center {
+                    width: 100%;
+                    .blogWrap {
+                        flex-wrap: wrap; justify-content: center;
+                        .blogBox {width: 96%; margin-bottom: 50px;}
+                    }
+                }
+            }
+            //열번째 영역
+            .contact {
+                .center {
+                    width: 100%; flex-wrap: wrap;
+                    justify-content: center;
+                    .info {width: 96%; margin-top: 250px; margin-bottom: 65px;}
+                    .form {
+                        width: 96%;
+                    }
+                }
             }
         }
     }
