@@ -109,8 +109,52 @@ body {
   width: 102%;
   opacity: 1;
 }
+#wrap #header .mobileBoard {
+  position: absolute;
+  left: 0;
+  top: 103px;
+  width: 100%;
+  height: 0;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+}
+#wrap #header .mobileBoard .center {
+  display: none;
+  width: 78%;
+  padding: 30px 15px;
+  box-sizing: border-box;
+  background-color: gold;
+}
+#wrap #header .mobileBoard .center .mobileMenu li {
+  position: relative;
+  margin-bottom: 25px;
+}
+#wrap #header .mobileBoard .center .mobileMenu li a {
+  color: #000;
+  font-weight: bold;
+}
+#wrap #header .mobileBoard .center .mobileMenu li a::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  transition: all 0.5s;
+}
+#wrap #header .mobileBoard .center .mobileMenu li a:hover::before {
+  width: 100%;
+}
+#wrap #header .mobileBoard .center .mobileMenu li::before {
+  width: 100%;
+}
 #wrap #header.fixed {
   background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 #wrap #header.fixed .center .gnb > li::after {
   background-color: #040c2c;
@@ -124,6 +168,9 @@ body {
 }
 #wrap #header.fixed .center .login::after {
   background-color: #3a3a3a;
+}
+#wrap #header.fixed .center .mobileBtn .bar {
+  background-color: #040c2c;
 }
 #wrap #container .intro {
   width: 100%;
@@ -825,5 +872,52 @@ body {
   }
   #wrap #container .contact .center .form form textarea {
     width: 517px;
+  }
+}
+@media screen and (max-width: 990px) {
+  #wrap #header .center {
+    position: relative;
+  }
+  #wrap #header .center .gnb {
+    display: none;
+  }
+  #wrap #header .center .login {
+    margin-right: 50px;
+  }
+  #wrap #header .center .mobileBtn {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  #wrap #header .center .mobileBtn .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.5s;
+  }
+  #wrap #header .center .mobileBtn.close .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #wrap #header .center .mobileBtn.close .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 7px;
+  }
+  #wrap #header .center .mobileBtn.close .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -7px;
+  }
+  #wrap #header .mobileBoard.show {
+    height: 347px;
+  }
+  #wrap #header .mobileBoard.show .center {
+    display: block;
   }
 }
