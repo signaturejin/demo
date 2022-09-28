@@ -44,7 +44,27 @@ view.addEventListener("mouseenter",function(){
 });
 
 view.addEventListener("mouseleave",function(){
-    setTimeout(function(){
-        autoSlide();
-    },1000);
+    
+    autoSlide = setInterval(function(){
+        if(num >= slBtn.length - 1){
+            num = 0;
+        }
+        else {
+            num++;
+        }
+    
+        view.style.marginLeft = -100 * num + "%";
+    
+        //버튼 전부비활성화
+        slBtn.forEach(function(item,index){
+            item.classList.remove("on");
+        });
+        // 해당 버튼 활성화
+        slBtn[num].classList.add("on");
+
+    },2000);
+    
+    // setTimeout(function(){
+    //     autoSlide();
+    // },1000);
 });

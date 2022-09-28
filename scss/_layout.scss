@@ -9,7 +9,6 @@
             width: 73%; //1410px
             display: flex; justify-content: space-between;
             align-items: center;
-            // .logo {}
             .gnb {
                 display: flex;
                 > li {
@@ -359,6 +358,7 @@
             }
             .sliderBtn {
                 display: flex; justify-content: center;
+                align-items: center;
                 position: absolute; left: 50%; bottom: 30px;
                 transform: translateX(-50%);
                 li {
