@@ -147,10 +147,10 @@ body {
   transition: all 0.5s;
 }
 #wrap #header .mobileBoard .center .mobileMenu li a:hover::before {
-  width: 100%;
+  width: 20%;
 }
-#wrap #header .mobileBoard .center .mobileMenu li::before {
-  width: 100%;
+#wrap #header .mobileBoard .center .mobileMenu li.on a::before {
+  width: 20%;
 }
 #wrap #header.fixed {
   background-color: #fff;

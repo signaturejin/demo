@@ -92,9 +92,14 @@
                                 transition: all 0.5s;
                             }
                             &:hover {
-                                &::before {width: 100%;}
+                                &::before {width: 20%;}
                             }
-                        } &::before {width: 100%;}
+                        }
+                    }
+                    li.on {
+                        a {
+                            &::before {width: 20%;}
+                        }
                     }
                 }
             }
