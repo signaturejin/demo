@@ -13,10 +13,10 @@ window.addEventListener("scroll",function(){
     
     if(scTop >= cont2Start){//스크롤의 값이 두번째영역 시작값보다 크거나 같을 경우
         header.classList.add("fixed");//클래스 붙여줌
-        logoImg.setAttribute("src","../img/logo.png");//로고이미지 바꿔줌
+        logoImg.setAttribute("src","img/logo.png");//로고이미지 바꿔줌
     }
     else{//아닐 경우 클래스 없애주고 기존 이미지로 변경
         header.classList.remove("fixed");
-        logoImg.setAttribute("src","../img/logo2.png");
+        logoImg.setAttribute("src","img/logo2.png");
     }
 });
