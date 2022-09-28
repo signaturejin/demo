@@ -21,7 +21,7 @@ slBtn.forEach(function(item,index){
 //자동 슬라이딩
 let autoSlide = setInterval(function(){
 
-    if(num >= slBtn.length){
+    if(num >= slBtn.length - 1){
         num = 0;
     }
     else {
@@ -30,7 +30,14 @@ let autoSlide = setInterval(function(){
 
     view.style.marginLeft = -100 * num + "%";
 
-},100);
+    //버튼 전부비활성화
+    slBtn.forEach(function(item,index){
+        item.classList.remove("on");
+    });
+    // 해당 버튼 활성화
+    slBtn[num].classList.add("on");
+
+},2000);
 
 view.addEventListener("mouseenter",function(){
     clearInterval(autoSlide);
@@ -39,5 +46,5 @@ view.addEventListener("mouseenter",function(){
 view.addEventListener("mouseleave",function(){
     setTimeout(function(){
         autoSlide();
-    },100);
+    },1000);
 });
