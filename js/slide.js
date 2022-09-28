@@ -46,6 +46,7 @@ view.addEventListener("mouseenter",function(){
 view.addEventListener("mouseleave",function(){
     
     autoSlide = setInterval(function(){
+        
         if(num >= slBtn.length - 1){
             num = 0;
         }

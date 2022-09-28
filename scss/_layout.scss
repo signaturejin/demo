@@ -39,8 +39,12 @@
                 border-radius: 3px; text-align: center;
                 transition: all 0.5s;
                 position: relative;
+                span {
+                    position: relative;
+                    z-index:3;
+                }
                 &::after {
-                    content: "LOGIN"; display: block;
+                    content: ""; display: block;
                     width: 0;
                     height: 40px;
                     position: absolute;
@@ -50,10 +54,10 @@
                     border-radius: 3px;
                     transition: all 0.5s;
                     opacity: 0;
-                    color: #fff;
-                    
                 }
                 &:hover {
+                    color:#fff;
+
                     &::after {
                         width: 102%;
                         opacity: 1;
@@ -156,9 +160,12 @@
                             transition: all 0.5s; opacity: 0;
                             color: #fff;
                         }
+                        span { 
+                            position:relative; z-index:3;
+                        }
                     }
                     .hireBtn {
-                        &::after {content: "Hire Me";}
+                        &::after {content: "";}
                         &:hover {
                             &::after {
                                 width: 102%;
@@ -167,7 +174,7 @@
                         }
                     }
                     .downCVBtn {
-                        &::after {content: "Download CV";}
+                        &::after {content: "";}
                         &:hover {
                             &::after {
                                 width: 102%;
