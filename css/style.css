@@ -255,6 +255,9 @@ body {
   width: 102%;
   opacity: 1;
 }
+#wrap #container .about_me .rightBox .about_img {
+  width: 100%;
+}
 #wrap #container .doing {
   background-color: #fafafa;
   display: flex;
@@ -796,4 +799,31 @@ body {
 #wrap #footer .f-text .copy {
   color: #fff;
   font-size: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+  #wrap #header .center {
+    width: 78%;
+  }
+  #wrap #container .doing .center {
+    width: 78%;
+  }
+  #wrap #container .portfolio .center {
+    width: 78%;
+  }
+  #wrap #container .slider .center {
+    width: 58%;
+  }
+  #wrap #container .blog .center {
+    width: 78%;
+  }
+  #wrap #container .contact .center {
+    width: 78%;
+  }
+  #wrap #container .contact .center .form form input {
+    width: 250px;
+  }
+  #wrap #container .contact .center .form form textarea {
+    width: 517px;
+  }
 }

@@ -185,6 +185,9 @@
                     
                 }
             }
+            .rightBox {
+                .about_img {width: 100%;}
+            }
         }
         // 세번째 구역
         .doing {
@@ -561,4 +564,48 @@
             .copy {color: #fff; font-size: 13px;}
         }
     }
+}
+
+//1200px 이하 반응형
+@media screen and (max-width: 1200px){
+    #wrap {
+        #header {
+            .center {width: 78%;}
+        }
+        #container {
+            //세번째 영역
+            .doing {
+                .center {width: 78%;}
+            }
+            //네번째 영역
+            .portfolio {
+                .center {width: 78%;}
+            }
+            //여섯번째 영역
+            .slider {
+                .center {width: 58%;}
+            }
+            //여덟번째 영역
+            .blog {
+                .center {width: 78%;}
+            }
+            //열번째 영역
+            .contact {
+                .center {
+                    width: 78%;
+                    .form {
+                        form {
+                            input {width: 250px;}
+                            textarea {width: 517px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//990px 이하 반응형
+#wrap {
+    
 }
