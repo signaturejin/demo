@@ -412,6 +412,7 @@
                         width: 31.333%;
                         border: 1px solid #ebebeb;
                         border-radius: 5px 5px 0 0; overflow: hidden;
+                        transition: all 0.5s;
                         .blogImg {
                             position: relative;
                             img {width: 100%;}
@@ -424,7 +425,10 @@
                                 font-weight: bold; color: #494949;
                                 transition: all 0.5s;
                             }
-                            &:hover {
+                        }
+                        &:hover {
+                            box-shadow: 2px 5px 5px rgba(0,0,0,0.2);
+                            .blogImg {
                                 .dateBox {
                                     background-color: #040c2c;
                                     color: #fff;
@@ -455,6 +459,8 @@
                             }
                             .more {
                                 color: #797979; font-weight: bold;
+                                transition: all 0.5s;
+                                &:hover {color: #040c2c;}
                             }
                         }
                     }

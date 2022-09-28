@@ -594,6 +594,7 @@ body {
   border: 1px solid #ebebeb;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
+  transition: all 0.5s;
 }
 #wrap #container .blog .center .blogWrap .blogBox .blogImg {
   position: relative;
@@ -618,7 +619,10 @@ body {
   color: #494949;
   transition: all 0.5s;
 }
-#wrap #container .blog .center .blogWrap .blogBox .blogImg:hover .dateBox {
+#wrap #container .blog .center .blogWrap .blogBox:hover {
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#wrap #container .blog .center .blogWrap .blogBox:hover .blogImg .dateBox {
   background-color: #040c2c;
   color: #fff;
 }
@@ -654,6 +658,10 @@ body {
 #wrap #container .blog .center .blogWrap .blogBox .botText .more {
   color: #797979;
   font-weight: bold;
+  transition: all 0.5s;
+}
+#wrap #container .blog .center .blogWrap .blogBox .botText .more:hover {
+  color: #040c2c;
 }
 #wrap #container #map {
   width: 100%;
