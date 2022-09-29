@@ -869,11 +869,15 @@ body {
   #wrap #container .contact .center {
     width: 78%;
   }
+  #wrap #container .contact .center .form form {
+    display: flex;
+    flex-wrap: wrap;
+  }
   #wrap #container .contact .center .form form input {
-    width: 250px;
+    width: 48%;
   }
   #wrap #container .contact .center .form form textarea {
-    width: 517px;
+    width: 98%;
   }
 }
 @media screen and (max-width: 990px) {
@@ -922,6 +926,19 @@ body {
   #wrap #header .mobileBoard.show .center {
     display: block;
   }
+  #wrap #container .trust {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #wrap #container .trust .imgWrap {
+    width: 200%;
+    justify-content: flex-start;
+  }
+  #wrap #container .trust .imgWrap img {
+    width: 9%;
+    margin: 0 2%;
+  }
 }
 @media screen and (max-width: 768px) {
   #wrap #header .center {
@@ -930,6 +947,10 @@ body {
   }
   #wrap #header .center .mobileBtn {
     right: 15px;
+  }
+  #wrap #header .mobileBoard {
+    justify-content: flex-start;
+    padding-left: 2%;
   }
   #wrap #container .about_me {
     display: block;
@@ -984,6 +1005,13 @@ body {
   #wrap #container .slider .sliderBtn {
     bottom: 100px;
   }
+  #wrap #container .trust {
+    width: 100%;
+  }
+  #wrap #container .trust .imgWrap img {
+    width: 12%;
+    margin: 0 2%;
+  }
   #wrap #container .blog .center {
     width: 100%;
   }
@@ -1007,5 +1035,14 @@ body {
   }
   #wrap #container .contact .center .form {
     width: 96%;
+  }
+}
+@media screen and (max-width: 580px) {
+  #wrap #container .trust .imgWrap img {
+    width: 13%;
+    margin: 0 2%;
+  }
+  #wrap #container .contact .center .form #user_form input {
+    width: 100%;
   }
 }
