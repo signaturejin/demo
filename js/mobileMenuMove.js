@@ -11,7 +11,7 @@ window.addEventListener("scroll",function(){
 
     // 각 구역의 시작위치값 배열에 담기
     sections.forEach(function(item,index){
-        secStart[index] = item.offsetTop - 100;
+        secStart[index] = item.offsetTop - 82;
 
         // 구역에 따라 mobileBtn에 클래스 붙여주기
         if(scTop >= secStart[index] && scTop < secStart[index + 1]){
@@ -27,6 +27,9 @@ window.addEventListener("scroll",function(){
     mobileMenu.forEach(function(item,index){
         item.addEventListener("click",function(e){
             e.preventDefault(); //페이지 이동 방지
+
+            mobileBtn.classList.remove("close");
+            mobileBoard.classList.remove("show");
 
             window.scrollTo({
                 top: secStart[index],

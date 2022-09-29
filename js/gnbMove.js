@@ -9,7 +9,7 @@ window.addEventListener("scroll",function(){
 
     //스크롤 값에 따라 gnb의 메뉴 아래에 막대기가 보이는 기능
     sections.forEach(function(item,index){
-        secStart[index] = item.offsetTop - 100;
+        secStart[index] = item.offsetTop - 90;
 
         if(scTop >= secStart[index] && scTop < secStart[index + 1]){
             //전부 비활성화
