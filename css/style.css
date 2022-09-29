@@ -122,6 +122,7 @@ body {
   justify-content: center;
   transition: all 0.5s;
   background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 #wrap #header .mobileBoard .center {
   display: none;

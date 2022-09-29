@@ -73,6 +73,7 @@
             display: flex; justify-content: center;
             transition: all 0.5s;
             background-color: #fff;
+            box-shadow: 0 5px 5px rgba(0,0,0,0.2);
             .center {
                 display: none;
                 width: 78%; padding: 30px 15px;
