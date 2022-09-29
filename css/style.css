@@ -1041,6 +1041,9 @@ body {
     width: 96%;
     margin-bottom: 50px;
   }
+  #wrap #container .contact {
+    padding-bottom: 200px;
+  }
   #wrap #container .contact .center {
     width: 100%;
     flex-wrap: wrap;
@@ -1059,6 +1062,9 @@ body {
   #wrap #container .trust .imgWrap img {
     width: 13%;
     margin: 0 2%;
+  }
+  #wrap #container .contact {
+    padding-bottom: 300px;
   }
   #wrap #container .contact .center .form #user_form input {
     width: 100%;
