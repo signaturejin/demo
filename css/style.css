@@ -948,9 +948,11 @@ body {
   #wrap #header .center .mobileBtn {
     right: 15px;
   }
-  #wrap #header .mobileBoard {
+  #wrap #header .mobileBoard.show {
     justify-content: flex-start;
     padding-left: 2%;
+    height: 230px;
+    overflow-y: scroll;
   }
   #wrap #container .about_me {
     display: block;
