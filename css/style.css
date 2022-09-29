@@ -341,14 +341,21 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-#wrap #container .doing .center .boxWrap .box {
+#wrap #container .doing .center .boxWrap a {
+  display: block;
   width: 31.333%;
+  color: #040c2c;
+  transition: all 0.5s;
+  margin-bottom: 10px;
+}
+#wrap #container .doing .center .boxWrap a .box {
+  width: 100%;
   margin: 2% 0;
   text-align: center;
   border: 1px solid #f3f1f1;
   background-color: #fff;
 }
-#wrap #container .doing .center .boxWrap .box .boxIcon {
+#wrap #container .doing .center .boxWrap a .box .boxIcon {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -356,21 +363,24 @@ body {
   text-align: center;
   margin: 40px auto 37px;
 }
-#wrap #container .doing .center .boxWrap .box .boxIcon span {
+#wrap #container .doing .center .boxWrap a .box .boxIcon span {
   color: #8a8a8a;
   font-size: 30px;
   margin-top: 50%;
   transform: translateY(-50%);
 }
-#wrap #container .doing .center .boxWrap .box .boxTitle {
-  font-size: 15px;
+#wrap #container .doing .center .boxWrap a .box .boxTitle {
+  font-size: 19px;
   margin-bottom: 25px;
 }
-#wrap #container .doing .center .boxWrap .box .boxText {
+#wrap #container .doing .center .boxWrap a .box .boxText {
   font-size: 13px;
   line-height: 30px;
   color: #797979;
   margin-bottom: 50px;
+}
+#wrap #container .doing .center .boxWrap a:hover {
+  box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.2);
 }
 #wrap #container .portfolio {
   display: flex;
@@ -925,6 +935,12 @@ body {
   }
   #wrap #header .mobileBoard.show .center {
     display: block;
+  }
+  #wrap #container .doing .center {
+    width: 70%;
+  }
+  #wrap #container .doing .center .boxWrap a {
+    width: 48%;
   }
   #wrap #container .trust {
     width: 90%;

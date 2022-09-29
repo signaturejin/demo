@@ -247,26 +247,34 @@
                 .boxWrap {
                     width: 100%; display: flex;
                     justify-content: space-between; flex-wrap: wrap;
-                    .box {
-                        width: 31.333%; margin: 2% 0;
-                        text-align: center;
-                        border: 1px solid #f3f1f1;
-                        background-color: #fff;
-                        .boxIcon {
-                            width: 80px; height: 80px;
-                            border-radius: 50%;
-                            border: 1px solid #8a8a8a;
+                    a {
+                        display: block; width: 31.333%;
+                        color: #040c2c; transition: all 0.5s;
+                        margin-bottom: 10px;
+                        .box {
+                            width: 100%; margin: 2% 0;
                             text-align: center;
-                            margin: 40px auto 37px;
-                            span {
-                                color: #8a8a8a; font-size: 30px;
-                                margin-top: 50%; transform: translateY(-50%);
+                            border: 1px solid #f3f1f1;
+                            background-color: #fff;
+                            .boxIcon {
+                                width: 80px; height: 80px;
+                                border-radius: 50%;
+                                border: 1px solid #8a8a8a;
+                                text-align: center;
+                                margin: 40px auto 37px;
+                                span {
+                                    color: #8a8a8a; font-size: 30px;
+                                    margin-top: 50%; transform: translateY(-50%);
+                                }
+                            }
+                            .boxTitle {font-size: 19px; margin-bottom: 25px;}
+                            .boxText {
+                                font-size: 13px; line-height: 30px;
+                                color: #797979; margin-bottom: 50px;
                             }
                         }
-                        .boxTitle {font-size: 15px; margin-bottom: 25px;}
-                        .boxText {
-                            font-size: 13px; line-height: 30px;
-                            color: #797979; margin-bottom: 50px;
+                        &:hover {
+                            box-shadow: 10px 10px 3px rgba(0,0,0,0.2);
                         }
                     }
                 }
@@ -691,6 +699,15 @@
         }
         //중간영역
         #container {
+            .doing {
+                .center {
+                    width: 70%;
+                    .boxWrap {
+                        a {width: 48%;}
+                    }
+                }
+
+            }
             //일곱번째 영역
             .trust {
                 width: 90%; margin: 0 auto;
