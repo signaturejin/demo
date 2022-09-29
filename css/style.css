@@ -24,6 +24,9 @@ body {
   line-height: 1;
 }
 
+#wrap {
+  overflow: hidden;
+}
 #wrap #header {
   width: 100%;
   display: flex;
@@ -953,13 +956,13 @@ body {
     width: 47%;
   }
   #wrap #container .portfolio .center .isoWrap .portBox .wrap .box p {
-    font-size: 30px;
-    margin-bottom: 25px;
+    font-size: 20px;
+    margin-bottom: 5px;
     line-height: 35px;
   }
   #wrap #container .portfolio .center .isoWrap .portBox .wrap .box .icon i {
-    font-size: 30px;
-    margin: 0 3px;
+    font-size: 17px;
+    margin: 0 1px;
   }
   #wrap #container .counting {
     height: 545px;
