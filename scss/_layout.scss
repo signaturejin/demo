@@ -251,9 +251,9 @@
                     a {
                         display: block; width: 31.333%;
                         color: #040c2c; transition: all 0.5s;
-                        margin-bottom: 10px;
+                        margin-bottom: 15px;
                         .box {
-                            width: 100%; margin: 2% 0;
+                            width: 100%;
                             text-align: center;
                             border: 1px solid #f3f1f1;
                             background-color: #fff;
@@ -275,7 +275,7 @@
                             }
                         }
                         &:hover {
-                            box-shadow: 10px 10px 3px rgba(0,0,0,0.2);
+                            box-shadow: 5px 5px 3px rgba(0,0,0,0.2);
                         }
                     }
                 }
